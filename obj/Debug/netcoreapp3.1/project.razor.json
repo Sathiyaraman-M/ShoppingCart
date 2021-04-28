@@ -14400,6 +14400,27 @@
     "CSharpLanguageVersion": 800
   },
   "RootNamespace": "ShoppingCart",
-  "Documents": [],
+  "Documents": [
+    {
+      "FilePath": "d:\\Shopping Cart\\ShoppingCart\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Shopping Cart\\ShoppingCart\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Shopping Cart\\ShoppingCart\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Shopping Cart\\ShoppingCart\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
   "SerializationFormat": "0.2"
 }
