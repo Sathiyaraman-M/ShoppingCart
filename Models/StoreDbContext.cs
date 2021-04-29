@@ -1,7 +1,10 @@
+using Microsoft.EntityFrameworkCore;
+
 namespace ShoppingCart.Models
 {
-    public class StoreDbContext
+    public class StoreDbContext : DbContext
     {
-
+        public StoreDbContext(DbContextOptions<StoreDbContext> options) : base(options) { }
+        public DbSet<Product> Products { get; set; }
     }
 }
