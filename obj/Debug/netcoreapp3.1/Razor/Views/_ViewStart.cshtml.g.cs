@@ -21,13 +21,20 @@ using ShoppingCart.Models;
 #nullable disable
 #nullable restore
 #line 2 "D:\Shopping Cart\ShoppingCart\Views\_ViewImports.cshtml"
-using Microsoft.AspNetCore.Mvc.TagHelpers;
+using ShoppingCart.Models.ViewModels;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 3 "D:\Shopping Cart\ShoppingCart\Views\_ViewImports.cshtml"
+using ShoppingCart.Infrastructure;
 
 #line default
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"101e29c025b7c28de6c86dbd7d29a3dfadd7316b", @"/Views/_ViewStart.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"414da00a3fc71f9bfed0f0af19517bb91c73666e", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"cac060900899bd986bcbea817078749b62925608", @"/Views/_ViewImports.cshtml")]
     public class Views__ViewStart : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

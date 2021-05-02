@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ShoppingCart.Models
 {
-    public class Product
+    public sealed class Product
     {
         public long ProductId { get; set; }
         [Required(ErrorMessage = "Please enter a Product Name")]
@@ -18,6 +18,6 @@ namespace ShoppingCart.Models
         [Required(ErrorMessage = "Please specify a category")]
         public string Category { get; set; }
         [Required(ErrorMessage = "Please enter the stock quantity available")]
-        public int ProductStock { get; set; }
+        public int StockQuantity { get; set; }
     }
 }

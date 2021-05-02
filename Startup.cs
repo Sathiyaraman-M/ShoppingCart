@@ -26,6 +26,12 @@ namespace ShoppingCart
         {
             services.AddControllersWithViews();
             services.AddDbContext<StoreDbContext>(options => options.UseSqlServer(Configuration["connectionStrings:SportsStoreConnection"]));
+            services.AddScoped<IProductRepository,EFProductRepository>();
+            services.AddRazorPages();
+            services.AddDistributedMemoryCache();
+            services.AddSession();
+            services.AddScoped<Cart>(p => SessionCart.GetCart(p));
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -36,10 +42,13 @@ namespace ShoppingCart
                 app.UseDeveloperExceptionPage();
             }
             app.UseStaticFiles();
+            app.UseSession();
             app.UseRouting();
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapControllerRoute("category", "/{category}", new { Controller = "Home", Action = "Index" });
                 endpoints.MapDefaultControllerRoute();
+                endpoints.MapRazorPages();
             });
         }
     }

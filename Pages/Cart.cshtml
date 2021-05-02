@@ -1,0 +1,70 @@
+@page "/Cart"
+@model CartModel
+<header class="page-title pt-large pt-dark pt-plax-lg-dark" data-stellar-background-ratio="0.4">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h1>Cart</h1>
+                <span class="subheading">Your shopping cart</span>
+            </div>
+        </div>
+    </div>
+</header>  
+<div class="container section">
+    <div class="row">
+        <div class="col-lg-9">
+            <div class="table-responsive">
+                <table class="table checkout-table">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Preview</th>
+                            <th>Product</th>
+                            <th>Q-ty</th>
+                            <th>Price</th>
+                            <th>Total</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (CartLine line in Model.Cart.Lines)
+                        {
+                            <tr>
+                                <td>@line.CartLineID</td>
+                                <td><img src="lib/assets/images/shop/p-thumb-1.jpg" alt="Thumb product image"></td>
+                                <td>@line.Product.Name</td>
+                                <td>@line.Quantity</td>
+                                <td>@line.Product.Price.ToString("c")</td>
+                                <td>@((line.Quantity * line.Product.Price).ToString("c"))</td>
+                                <td>
+                                    <form asp-page-handler="Remove" method="POST">
+                                        <input type="hidden" name="ProductId" value="@line.Product.ProductId" />
+                                        <input type="hidden" name="returnUrl" value="@Model.ReturnUrl" />
+                                        <button type="submit"><span class="linea-arrows-square-remove"></span></button>
+                                    </form>
+                                </td>
+                            </tr>
+                        }       
+                    </tbody>
+                </table>
+            </div> 
+            <div class="checkout-coupon-form ws-m">
+                <a class="btn btn-ghost pull-right" href="@Model.ReturnUrl">Continue Shopping</a>
+            </div> 
+        </div>
+        <div class="col-lg-3 totals-group">
+            <div class="totals-heading">
+                <h6>Card Totals</h6>
+            </div>
+            <div class="totals-content">
+                <div class="total-group">
+                    <h5>Total:</h5>
+                    <p>@Model.Cart.ComputeTotalValues().ToString("c")</p>
+                </div>
+                <div class="checkout-btn-wrapper">
+                    <a class="btn checkout-btn" asp-action="Checkout" asp-controller="Order">Go to Checkout</a>x
+                </div>
+            </div>
+        </div>  
+    </div>
+</div>
