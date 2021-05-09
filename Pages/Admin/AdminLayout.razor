@@ -1,0 +1,103 @@
+@inherits LayoutComponentBase
+<nav class="navbar navbar-default navbar-fixed-top mega navbar-trans navbar-trans-dark trans-helper">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>  
+            <a class="navbar-brand" asp-action="Index" asp-controller="Home"><img class="navbar-logo-dark" alt="Sports Store" src="/lib/assets/images/logo.png" /></a>                                      
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li>
+                    <NavLink href="/admin/products" Match="NavLinkMatch.Prefix">
+                        Products<span class="sr-only"></span>
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink href="/admin/orders" Match="NavLinkMatch.Prefix">
+                        Orders<span class="sr-only"></span>
+                    </NavLink>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="cart-nav row">
+                    <a href="/account/logout">
+                        Log out<span class="sr-only"></span>
+                    </a> 
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="body-content">
+    <div class="container">
+        <div id="page-top" class="ws-m"></div>
+        @Body
+    </div>
+    <div class="ws-m"></div>
+</div>
+<footer class="footer-litle">
+    <div class="gray-bg">
+        <!-- Contact Info -->
+        <address>
+            <ul>
+                <!-- Address -->
+                <li>
+                    <span class="linea-basic-map adr-icon"></span>
+                    <div class="adr-group">
+                        <span class="adr-heading">Address</span>
+                        <span class="adr-info">100 Street, Il, Us</span>
+                    </div>
+                </li>
+                <!-- Email -->
+                <li>
+                    <span class="linea-basic-paperplane adr-icon"></span>
+                    <div class="adr-group">
+                        <span class="adr-heading">Email</span>
+                        <span class="adr-info">sayhello@email.com</span>
+                    </div>
+                </li>
+                <!-- Phone -->
+                <li>
+                    <span class="linea-basic-smartphone adr-icon"></span>
+                    <div class="adr-group">
+                        <span class="adr-heading">Phone</span>
+                        <span class="adr-info">+ 123 4567 890</span>
+                    </div>
+                </li>
+            </ul>
+        </address>
+    </div><!-- / .gray-bg -->
+    <!-- Social Links -->
+    <div class="dark-bg">
+        <div class="container footer-social-links">
+            <div class="row">
+                <ul>
+                    <li></li>
+                    <li><a href="#">facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Discord</a></li>
+                </ul>
+            </div>
+        </div><!-- / .container -->
+    </div><!-- / .dark-bg -->
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <small>&copy; 2021 Definity. Made by Sathiyaraman and Suhail Sherief</small>
+                </div>
+                <div class="col-md-6">
+                    <small><a href="#page-top" class="pull-right to-the-top">To the top<i
+                                class="fa fa-angle-up"></i></a></small>
+                </div>
+            </div><!-- / .row -->
+        </div><!-- / .container -->
+    </div><!-- / .copyright -->
+</footer><!-- / .footer-litle -->

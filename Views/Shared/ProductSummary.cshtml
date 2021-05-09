@@ -1,34 +1,35 @@
 @model Product
 <div class="col-xs-12 col-sm-6 col-lg-3">
     <div class="shop-product-card">
-        <div class="product-image-wrapper">
-            @if(Model.StockQuantity == 0)
-            {
-                <span class="label label-red sale-label">OUT OF STOCK</span>
-            }
-            else
-            {
-                @if(Model.StockQuantity <= 5 && Model.StockQuantity > 0)
+        <form method="POST" asp-page="/Cart" id="@Model.ProductId">
+            <div class="product-image-wrapper">
+                @if(Model.StockQuantity == 0)
                 {
-                    <span class="label label-yellow sale-label">Only @Model.StockQuantity Left!</span>
+                    <span class="label label-red sale-label">OUT OF STOCK</span>
                 }
-                <form method="POST" asp-page="/Cart" id="@Model.ProductId">
-                    <input type="hidden" asp-for="ProductId" />
-                    <input type="hidden" name="returnUrl" value="@ViewContext.HttpContext.Request.PathAndQuery()" />
-                    <button type="submit" href="#" class="buy-btn"><span class="linea-ecommerce-bag"></span></button>
-                </form>
-            }
-            <!--Need to extend Product Class with IEnumerable<Images>-->
-            <div class="shop-p-slider">
-                <a href="../../pages/shop/shop-single.html"><img src="http://placehold.it/263x350" alt="Product Image 1"></a>
-                <a href="../../pages/shop/shop-single.html"><img src="http://placehold.it/263x350" alt="Product Image 6"></a>
-                <a href="../../pages/shop/shop-single.html"><img src="http://placehold.it/263x350" alt="Product Image 8"></a>
+                else
+                {
+                    @if(Model.StockQuantity <= 5 && Model.StockQuantity > 0)
+                    {
+                        <span class="label label-yellow sale-label">Only @Model.StockQuantity Left!</span>
+                    }
+                    
+                        <input type="hidden" asp-for="ProductId" />
+                        <input type="hidden" name="returnUrl" value="@ViewContext.HttpContext.Request.PathAndQuery()" />
+                        <button type="submit" class="buy-btn"><span class="linea-ecommerce-bag"></span></button>                
+                }
+                <!--Need to extend Product Class with IEnumerable<Images>-->
+                <div class="shop-p-slider">
+                    <img src="http://placehold.it/263x350" alt="Product Image 1">
+                    <img src="http://placehold.it/263x350" alt="Product Image 6">
+                    <img src="http://placehold.it/263x350" alt="Product Image 8">
+                </div>
             </div>
-        </div>
-        <div class="product-meta">
-            <a href="../../pages/shop/shop-single.html"><h4 class="product-name">@Model.Name</h4></a>
-            <span class="product-sep"></span>
-            <p class="product-price">@Model.Price.ToString("c")</p>
-        </div>
+            <div class="product-meta">
+                <h4 class="product-name">@Model.Name</h4>
+                <span class="product-sep"></span>
+                <p class="product-price">@Model.Price.ToString("c")</p>
+            </div>
+        </form>
     </div>
 </div>

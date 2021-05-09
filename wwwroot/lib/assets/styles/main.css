@@ -1459,12 +1459,13 @@ blockquote footer cite, .wrapper-404 .content-wrapper .info-wrapper .info-404 fo
 /* --------------------------------------------------
 	2.0 Buttons
 -------------------------------------------------- */
+/*GREEN*/
 /* ---- 2.1 Defualt Buttons ---- */
 .btn, .btn-ghost, .btn-ghost-light, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light, .btn-text, .btn-text-light, .btn-light, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-light {
   position: relative;
   display: inline-block;
   padding: 8px 38px;
-  background: #111;
+  background:rgb(8, 156, 3);;
   color: #ececec;
   font-family: "Montserrat", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
   text-transform: uppercase;
@@ -1476,19 +1477,19 @@ blockquote footer cite, .wrapper-404 .content-wrapper .info-wrapper .info-404 fo
           transition: all 0.5s;
 }
 
-.btn:visited, .btn-ghost:visited, .btn-ghost-light:visited, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:visited, .btn-text:visited, .btn-text-light:visited, .btn-light:visited, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost:visited, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-light:visited {
+.btn:visited, .btn-ghost:visited, .btn-ghost-light:visited, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:visited,  /*.btn-text:visited,*/ .btn-text-light:visited, .btn-light:visited, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost:visited, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-light:visited {
   color: #ececec;
-  background: #111;
+  background: rgb(8, 156, 3);;
 }
 
 .btn:visited:hover, .btn-ghost:visited:hover, .btn-ghost-light:visited:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:visited:hover, .btn-text:visited:hover, .btn-text-light:visited:hover, .btn-light:visited:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost:visited:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-light:visited:hover {
   color: #ececec;
-  background: #3f3f3f;
+  background: rgb(7, 117, 3);
 }
 
-.btn:hover, .btn-ghost:hover, .btn-ghost-light:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:hover, .btn-text:hover, .btn-text-light:hover, .btn-light:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-light:hover {
+.btn:hover, .btn-ghost:hover, .btn-ghost-light:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:hover, /*.btn-text:hover,*/ .btn-text-light:hover, .btn-light:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-light:hover {
   color: #ececec;
-  background: #3f3f3f;
+  background: rgb(7, 117, 3);;
 }
 
 .btn:focus, .btn-ghost:focus, .btn-ghost-light:focus, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:focus, .btn-text:focus, .btn-text-light:focus, .btn-light:focus, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost:focus, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-light:focus {
@@ -1499,8 +1500,8 @@ blockquote footer cite, .wrapper-404 .content-wrapper .info-wrapper .info-404 fo
 /* ---- 2.2 Ghost Buttons ---- */
 .btn-ghost, .btn-ghost-light, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light {
   background: none;
-  color: #111;
-  border: 2px solid #111;
+  color: rgb(8, 156, 3);;
+  border: 2px solid rgb(8, 156, 3);;
   overflow: hidden;
   z-index: 1;
 }
@@ -1508,7 +1509,7 @@ blockquote footer cite, .wrapper-404 .content-wrapper .info-wrapper .info-404 fo
 .btn-ghost:after, .btn-ghost-light:after, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:after {
   content: '';
   position: absolute;
-  background: #111;
+  background: rgb(8, 156, 3);;
   left: 0;
   top: 100%;
   width: 100%;
@@ -1522,7 +1523,7 @@ blockquote footer cite, .wrapper-404 .content-wrapper .info-wrapper .info-404 fo
 .btn-ghost-light:visited,
 .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:visited,
 .btn-ghost:focus, .btn-ghost-light:focus, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:focus {
-  color: #111;
+  color: rgb(8, 156, 3);;
   text-decoration: none;
 }
 
@@ -1557,7 +1558,7 @@ input[class="btn-ghost"]:after {
 /* ---- 2.4 Text Buttons ---- */
 .btn-text, .btn-text-light {
   background: none;
-  border: 2px solid rgba(17, 17, 17, 0);
+  border: 2px solid rgb(8, 156, 3);;
   color: #777;
 }
 
@@ -1565,7 +1566,285 @@ input[class="btn-ghost"]:after {
   color: #777;
   background: none;
 }
+/*
+.btn-text:visited:hover, .btn-text-light:visited:hover {
+  color: #111;
+  background: none;
+  border: 2px solid #111111;
+}
 
+.btn-text:hover, .btn-text-light:hover {
+  color: #111;
+  background: none;
+  border: 2px solid #111111;
+}
+
+.btn-text:focus, .btn-text-light:focus {
+  color: #111;
+  outline: none;
+  text-decoration: none;
+}
+
+/* ---- 2.5 Button Sizes ---- */
+.btn-large {
+  padding: 10px 54px;
+  font-size: 1.1em;
+  letter-spacing: 3px;
+}
+
+.btn-small {
+  padding: 6px 33px;
+  font-size: 0.75em;
+}
+
+/*RED*/
+/* ---- 2.1 Defualt Buttons ---- */
+.btn-red, .btn-ghost-red, .btn-ghost-red-light, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-red-light, .btn-text, .btn-text-light, .btn-red-light, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-red, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-light {
+  position: relative;
+  display: inline-block;
+  padding: 8px 38px;
+  background:rgb(197, 16, 16);  
+  border: 2px solid rgba(197, 16, 16);
+  color: #ececec;
+  font-family: "Montserrat", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-size: 0.9em;
+  line-height: 1.8em;
+  border-radius: 0;
+  -webkit-transition: all 0.5s;
+          transition: all 0.5s;
+}
+
+.btn-red:visited, .btn-ghost-red:visited, .btn-ghost-light:visited, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:visited,  /*.btn-text:visited,*/ .btn-text-light:visited, .btn-light:visited, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-red:visited, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-light:visited {
+  color: #ececec;
+  background: rgb(197, 16, 16);
+}
+
+.btn-red:visited:hover, .btn-ghost-red:visited:hover, .btn-ghost-light:visited:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:visited:hover, .btn-text:visited:hover, .btn-text-light:visited:hover, .btn-light:visited:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-red:visited:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-light:visited:hover {
+  color: #ececec;
+  background: rgb(151, 14, 14);
+}
+
+.btn-red:hover, .btn-ghost-red:hover, .btn-ghost-light:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:hover, /*.btn-text:hover,*/ .btn-text-light:hover, .btn-light:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-red:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-light:hover {
+  color: #ececec;
+  background: rgb(151, 14, 14);
+}
+
+.btn-red:focus, .btn-ghost-red:focus, .btn-ghost-light:focus, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:focus, .btn-text:focus, .btn-text-light:focus, .btn-light:focus, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-red:focus, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-light:focus {
+  color: #ececec;
+  outline: none;
+}
+
+/* ---- 2.2 Ghost Buttons ---- */
+.btn-ghost-red, .btn-ghost-light, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light {
+  background: none;
+  color: rgb(197, 16, 16);
+  border: 2px solid rgb(197, 16, 16);
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn-ghost-red:after, .btn-ghost-light:after, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:after {
+  content: '';
+  position: absolute;
+  background: rgb(197, 16, 16);
+  left: 0;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: top 0.3s;
+          transition: top 0.3s;
+  z-index: -1;
+}
+
+.btn-ghost-red:visited,
+.btn-ghost-light:visited,
+.navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:visited,
+.btn-ghost-red:focus, .btn-ghost-light:focus, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:focus {
+  color: rgb(197, 16, 16);
+  text-decoration: none;
+}
+
+.btn-ghost-red:hover, .btn-ghost-light:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:hover {
+  color: #ececec;
+  background: none;
+}
+
+.btn-ghost-red:hover:visited, .btn-ghost-light:hover:visited, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:hover:visited {
+  color: #ececec;
+  text-decoration: none;
+}
+
+.btn-ghost-red:hover:after, .btn-ghost-light:hover:after, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:hover:after {
+  top: 0;
+}
+
+input[class="btn-ghost"]:hover {
+  color: #ececec;
+  background: #111;
+}
+
+input[class="btn-ghost"]:after {
+  content: none;
+}
+
+/* ---- 2.3 Buttons Rounded ---- */
+.btn-round {
+  border-radius: 25px;
+}
+
+/* ---- 2.4 Text Buttons ---- */
+.btn-text, .btn-text-light {
+  background: none;
+  border: 2px solid rgb(197, 16, 16);
+  color: #777;
+}
+
+.btn-text:visited, .btn-text-light:visited {
+  color: #777;
+  background: none;
+}
+/*
+.btn-text:visited:hover, .btn-text-light:visited:hover {
+  color: #111;
+  background: none;
+  border: 2px solid #111111;
+}
+
+.btn-text:hover, .btn-text-light:hover {
+  color: #111;
+  background: none;
+  border: 2px solid #111111;
+}
+
+.btn-text:focus, .btn-text-light:focus {
+  color: #111;
+  outline: none;
+  text-decoration: none;
+}
+
+/* ---- 2.5 Button Sizes ---- */
+.btn-large {
+  padding: 10px 54px;
+  font-size: 1.1em;
+  letter-spacing: 3px;
+}
+
+.btn-small {
+  padding: 6px 33px;
+  font-size: 0.75em;
+}
+
+/*BLUE*/
+/* ---- 2.1 Defualt Buttons ---- */
+.btn-red, .btn-ghost-red, .btn-ghost-red-light, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-red-light, .btn-text, .btn-text-light, .btn-red-light, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-red, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-light {
+  position: relative;
+  display: inline-block;
+  padding: 8px 38px;
+  background:rgb(10, 41, 214);
+  border: 2px solid rgb(10, 41, 214);
+  color: #ececec;
+  font-family: "Montserrat", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-size: 0.9em;
+  line-height: 1.8em;
+  border-radius: 0;
+  -webkit-transition: all 0.5s;
+          transition: all 0.5s;
+}
+
+.btn-red:visited, .btn-ghost-red:visited, .btn-ghost-light:visited, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:visited,  /*.btn-text:visited,*/ .btn-text-light:visited, .btn-light:visited, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-red:visited, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-light:visited {
+  color: #ececec;
+  background: rgb(10, 41, 214);
+}
+
+.btn-red:visited:hover, .btn-ghost-red:visited:hover, .btn-ghost-light:visited:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:visited:hover, .btn-text:visited:hover, .btn-text-light:visited:hover, .btn-light:visited:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-red:visited:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-light:visited:hover {
+  color: #ececec;
+  background: rgb(8, 32, 170);
+}
+
+.btn-red:hover, .btn-ghost-red:hover, .btn-ghost-light:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:hover, /*.btn-text:hover,*/ .btn-text-light:hover, .btn-light:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-red:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-light:hover {
+  color: #ececec;
+  background: rgb(8, 32, 170);
+}
+
+.btn-red:focus, .btn-ghost-red:focus, .btn-ghost-light:focus, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:focus, .btn-text:focus, .btn-text-light:focus, .btn-light:focus, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-red:focus, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-light:focus {
+  color: #ececec;
+  outline: none;
+}
+
+/* ---- 2.2 Ghost Buttons ---- */
+.btn-ghost-red, .btn-ghost-light, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light {
+  background: none;
+  color: rgb(10, 41, 214);
+  border: 2px solid rgb(10, 41, 214);
+  overflow: hidden;
+  z-index: 1;
+}
+
+.btn-ghost-red:after, .btn-ghost-light:after, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:after {
+  content: '';
+  position: absolute;
+  background: rgb(10, 41, 214);
+  left: 0;
+  top: 100%;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: top 0.3s;
+          transition: top 0.3s;
+  z-index: -1;
+}
+
+.btn-ghost-red:visited,
+.btn-ghost-light:visited,
+.navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:visited,
+.btn-ghost-red:focus, .btn-ghost-light:focus, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:focus {
+  color: rgb(10, 41, 214);
+  text-decoration: none;
+}
+
+.btn-ghost-red:hover, .btn-ghost-light:hover, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:hover {
+  color: #ececec;
+  background: none;
+}
+
+.btn-ghost-red:hover:visited, .btn-ghost-light:hover:visited, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:hover:visited {
+  color: #ececec;
+  text-decoration: none;
+}
+
+.btn-ghost-red:hover:after, .btn-ghost-light:hover:after, .navbar .navbar-nav .dropdown .cart-dropdown .cart-btns .btn-ghost-light:hover:after {
+  top: 0;
+}
+
+input[class="btn-ghost"]:hover {
+  color: #ececec;
+  background: #111;
+}
+
+input[class="btn-ghost"]:after {
+  content: none;
+}
+
+/* ---- 2.3 Buttons Rounded ---- */
+.btn-round {
+  border-radius: 25px;
+}
+
+/* ---- 2.4 Text Buttons ---- */
+.btn-text, .btn-text-light {
+  background: none;
+  border: 2px solid rgb(10, 41, 214);
+  color: #777;
+}
+
+.btn-text:visited, .btn-text-light:visited {
+  color: #777;
+  background: none;
+}
+/*
 .btn-text:visited:hover, .btn-text-light:visited:hover {
   color: #111;
   background: none;
@@ -1669,6 +1948,52 @@ input[class="btn-ghost-light"]:hover {
 
 .btn-text-light:focus {
   color: #ececec;
+}
+/* ---- Custom Colors ---- */
+/**** Red Buttons ****/
+.btn-red, .btn-red:visited{
+  background: rgb(197, 16, 16);
+  border: 2px solid rgba(197, 16, 16);
+  color: #ececec;  
+}
+.btn-red:hover{
+  background: rgb(151, 14, 14);
+  border: 2px solid rgb(151, 14, 14);
+  color: #ececec;
+}
+.btn-red:focus{
+  color: #ececec;
+  outline: none;
+}
+/**** Green Buttons ****/
+.btn-green, .btn-green:visited{
+  background: rgb(8, 156, 3);
+  border: 2px solid rgb(8, 156, 3);
+  color: #ececec;  
+}
+.btn-green:hover{
+  background: rgb(7, 117, 3);
+  border: 2px solid rgb(7, 117, 3);
+  color: #ececec;
+}
+.btn-green:focus{
+  color: #ececec;
+  outline: none;
+}
+/**** Blue Buttons ****/
+.btn-blue, .btn-blue:visited{
+  background: rgb(10, 41, 214);
+  border: 2px solid rgb(10, 41, 214);
+  color: #ececec;  
+}
+.btn-blue:hover{
+  background: rgb(8, 32, 170);
+  border: 2px solid rgb(8, 32, 170);
+  color: #ececec;
+}
+.btn-blue:focus{
+  color: #ececec;
+  outline: none;
 }
 
 /* ---- 2.7 Pagination ---- */
@@ -2023,8 +2348,8 @@ fieldset[disabled] .form-control:hover {
 }
 
 .pt-large {
-  padding-top: 140px;
-  padding-bottom: 140px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 /* ---- 4.5 Header/Page Title Parallax ---- */
@@ -7268,7 +7593,7 @@ form .input-error-2:focus {
   position: relative;
   width: 100%;
   height: 100%;
-  background: #ececec url(http://placehold.it/2440x1578);
+  background: #ececec url(../images/hero-bg.png);
   background-position: 50%;
   background-size: cover;
   background-attachment: fixed;
@@ -7297,7 +7622,7 @@ form .input-error-2:focus {
 }
 
 .login-2 .bg-overlay .form-wrapper .form-content {
-  margin-top: 160px;
+  margin-top: 180px;
   padding: 100px 100px 30px 100px;
   border-bottom: 1px solid #eaeaea;
 }
@@ -9129,7 +9454,7 @@ form .input-error-2:focus {
 }
 
 .portfolio-item.hover-bottom figure figcaption a:focus {
-  otline: none;
+  outline: none;
 }
 
 .portfolio-item.hover-bottom figure figcaption .hover-heading {
@@ -10184,7 +10509,7 @@ form .input-error-2:focus {
 
 .table thead {
   border: none;
-  background: #111;
+  background: rgb(8, 156, 3);
 }
 
 .table thead tr th {

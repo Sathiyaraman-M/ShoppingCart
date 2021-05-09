@@ -12,6 +12,410 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
+        "HashCode": -895024497,
+        "Kind": "Components.Component",
+        "Name": "ShoppingCart.Pages.Admin.Edit",
+        "AssemblyName": "ShoppingCart",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Edit"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Id",
+            "TypeName": "System.Int64",
+            "Metadata": {
+              "Common.PropertyName": "Id"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ShoppingCart.Pages.Admin.Edit"
+        }
+      },
+      {
+        "HashCode": 873361750,
+        "Kind": "Components.Component",
+        "Name": "ShoppingCart.Pages.Admin.Edit",
+        "AssemblyName": "ShoppingCart",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ShoppingCart.Pages.Admin.Edit"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Id",
+            "TypeName": "System.Int64",
+            "Metadata": {
+              "Common.PropertyName": "Id"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ShoppingCart.Pages.Admin.Edit",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1584547749,
+        "Kind": "Components.Component",
+        "Name": "ShoppingCart.Pages.Admin.Products",
+        "AssemblyName": "ShoppingCart",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Products"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ShoppingCart.Pages.Admin.Products"
+        }
+      },
+      {
+        "HashCode": -2040954306,
+        "Kind": "Components.Component",
+        "Name": "ShoppingCart.Pages.Admin.Products",
+        "AssemblyName": "ShoppingCart",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ShoppingCart.Pages.Admin.Products"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ShoppingCart.Pages.Admin.Products",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1720895627,
+        "Kind": "Components.Component",
+        "Name": "ShoppingCart.Pages.Admin.Routed",
+        "AssemblyName": "ShoppingCart",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Routed"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ShoppingCart.Pages.Admin.Routed"
+        }
+      },
+      {
+        "HashCode": 1068067369,
+        "Kind": "Components.Component",
+        "Name": "ShoppingCart.Pages.Admin.Routed",
+        "AssemblyName": "ShoppingCart",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ShoppingCart.Pages.Admin.Routed"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ShoppingCart.Pages.Admin.Routed",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 778181576,
+        "Kind": "Components.Component",
+        "Name": "ShoppingCart.Pages.Admin.Orders",
+        "AssemblyName": "ShoppingCart",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Orders"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ShoppingCart.Pages.Admin.Orders"
+        }
+      },
+      {
+        "HashCode": 871348199,
+        "Kind": "Components.Component",
+        "Name": "ShoppingCart.Pages.Admin.Orders",
+        "AssemblyName": "ShoppingCart",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ShoppingCart.Pages.Admin.Orders"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ShoppingCart.Pages.Admin.Orders",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 378161130,
+        "Kind": "Components.Component",
+        "Name": "ShoppingCart.Pages.Admin.OrderTable",
+        "AssemblyName": "ShoppingCart",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "OrderTable"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "TableTitle",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "TableTitle"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Orders",
+            "TypeName": "System.Collections.Generic.IEnumerable<ShoppingCart.Models.Order>",
+            "Metadata": {
+              "Common.PropertyName": "Orders"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ButtonLabel",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "ButtonLabel"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "OrderSelected",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.Int32>",
+            "Metadata": {
+              "Common.PropertyName": "OrderSelected",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ShoppingCart.Pages.Admin.OrderTable"
+        }
+      },
+      {
+        "HashCode": 1092806352,
+        "Kind": "Components.Component",
+        "Name": "ShoppingCart.Pages.Admin.OrderTable",
+        "AssemblyName": "ShoppingCart",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ShoppingCart.Pages.Admin.OrderTable"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "TableTitle",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "TableTitle"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "Orders",
+            "TypeName": "System.Collections.Generic.IEnumerable<ShoppingCart.Models.Order>",
+            "Metadata": {
+              "Common.PropertyName": "Orders"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "ButtonLabel",
+            "TypeName": "System.String",
+            "Metadata": {
+              "Common.PropertyName": "ButtonLabel"
+            }
+          },
+          {
+            "Kind": "Components.Component",
+            "Name": "OrderSelected",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<System.Int32>",
+            "Metadata": {
+              "Common.PropertyName": "OrderSelected",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ShoppingCart.Pages.Admin.OrderTable",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -335652772,
+        "Kind": "Components.Component",
+        "Name": "ShoppingCart.Pages.Admin.AdminLayout",
+        "AssemblyName": "ShoppingCart",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "AdminLayout"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Body",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "Body",
+              "Components.ChildContent": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ShoppingCart.Pages.Admin.AdminLayout"
+        }
+      },
+      {
+        "HashCode": -1883447556,
+        "Kind": "Components.Component",
+        "Name": "ShoppingCart.Pages.Admin.AdminLayout",
+        "AssemblyName": "ShoppingCart",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ShoppingCart.Pages.Admin.AdminLayout"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Body",
+            "TypeName": "Microsoft.AspNetCore.Components.RenderFragment",
+            "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+            "Metadata": {
+              "Common.PropertyName": "Body",
+              "Components.ChildContent": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ShoppingCart.Pages.Admin.AdminLayout",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 1952661181,
+        "Kind": "Components.ChildContent",
+        "Name": "ShoppingCart.Pages.Admin.AdminLayout.Body",
+        "AssemblyName": "ShoppingCart",
+        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Body",
+            "ParentTag": "AdminLayout"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "ShoppingCart.Pages.Admin.AdminLayout.Body",
+          "Components.IsSpecialKind": "Components.ChildContent"
+        }
+      },
+      {
+        "HashCode": 1524737094,
+        "Kind": "Components.ChildContent",
+        "Name": "ShoppingCart.Pages.Admin.AdminLayout.Body",
+        "AssemblyName": "ShoppingCart",
+        "Documentation": "\n            <summary>\n            Gets the content to be rendered inside the layout.\n            </summary>\n        ",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Body",
+            "ParentTag": "ShoppingCart.Pages.Admin.AdminLayout"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.None",
+          "Common.TypeName": "ShoppingCart.Pages.Admin.AdminLayout.Body",
+          "Components.IsSpecialKind": "Components.ChildContent",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": 965091136,
+        "Kind": "Components.Component",
+        "Name": "ShoppingCart.Pages.Admin.Details",
+        "AssemblyName": "ShoppingCart",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Details"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Id",
+            "TypeName": "System.Int64",
+            "Metadata": {
+              "Common.PropertyName": "Id"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ShoppingCart.Pages.Admin.Details"
+        }
+      },
+      {
+        "HashCode": 674952617,
+        "Kind": "Components.Component",
+        "Name": "ShoppingCart.Pages.Admin.Details",
+        "AssemblyName": "ShoppingCart",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ShoppingCart.Pages.Admin.Details"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "Id",
+            "TypeName": "System.Int64",
+            "Metadata": {
+              "Common.PropertyName": "Id"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ShoppingCart.Pages.Admin.Details",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": 296257416,
         "Kind": "Components.Component",
         "Name": "Microsoft.AspNetCore.Components.Authorization.AuthorizeRouteView",
@@ -12498,6 +12902,23 @@
         }
       },
       {
+        "HashCode": 2085635320,
+        "Kind": "MVC.ViewComponent",
+        "Name": "__Generated__CategoryViewComponentTagHelper",
+        "AssemblyName": "ShoppingCart",
+        "CaseSensitive": false,
+        "TagMatchingRules": [
+          {
+            "TagName": "vc:category"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "ITagHelper",
+          "Common.TypeName": "__Generated__CategoryViewComponentTagHelper",
+          "MVC.ViewComponent.Name": "Category"
+        }
+      },
+      {
         "HashCode": -653984039,
         "Kind": "Components.Bind",
         "Name": "Bind",
@@ -14468,8 +14889,58 @@
   "RootNamespace": "ShoppingCart",
   "Documents": [
     {
+      "FilePath": "d:\\Shopping Cart\\ShoppingCart\\Views\\Account\\Login.cshtml",
+      "TargetPath": "Views\\Account\\Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Shopping Cart\\ShoppingCart\\Pages\\Admin\\Orders.razor",
+      "TargetPath": "Pages\\Admin\\Orders.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "d:\\Shopping Cart\\ShoppingCart\\Pages\\Admin\\Details.razor",
+      "TargetPath": "Pages\\Admin\\Details.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "d:\\Shopping Cart\\ShoppingCart\\Pages\\Admin\\_Imports.razor",
+      "TargetPath": "Pages\\Admin\\_Imports.razor",
+      "FileKind": "componentImport"
+    },
+    {
+      "FilePath": "d:\\Shopping Cart\\ShoppingCart\\Pages\\Admin\\Routed.razor",
+      "TargetPath": "Pages\\Admin\\Routed.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "d:\\Shopping Cart\\ShoppingCart\\Pages\\Admin\\AdminLayout.razor",
+      "TargetPath": "Pages\\Admin\\AdminLayout.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "d:\\Shopping Cart\\ShoppingCart\\Pages\\Admin\\OrderTable.razor",
+      "TargetPath": "Pages\\Admin\\OrderTable.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "d:\\Shopping Cart\\ShoppingCart\\Pages\\Completed.cshtml",
+      "TargetPath": "Pages\\Completed.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Shopping Cart\\ShoppingCart\\Pages\\Admin\\Products.razor",
+      "TargetPath": "Pages\\Admin\\Products.razor",
+      "FileKind": "component"
+    },
+    {
       "FilePath": "d:\\Shopping Cart\\ShoppingCart\\Pages\\About.cshtml",
       "TargetPath": "Pages\\About.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Shopping Cart\\ShoppingCart\\Pages\\Admin\\Index.cshtml",
+      "TargetPath": "Pages\\Admin\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14478,8 +14949,18 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Shopping Cart\\ShoppingCart\\Pages\\Admin\\Edit.razor",
+      "TargetPath": "Pages\\Admin\\Edit.razor",
+      "FileKind": "component"
+    },
+    {
       "FilePath": "d:\\Shopping Cart\\ShoppingCart\\Pages\\_ViewStart.cshtml",
       "TargetPath": "Pages\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Shopping Cart\\ShoppingCart\\Pages\\OrderFailed.cshtml",
+      "TargetPath": "Pages\\OrderFailed.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14490,6 +14971,21 @@
     {
       "FilePath": "d:\\Shopping Cart\\ShoppingCart\\Views\\Shared\\Components\\CartSummary\\Default.cshtml",
       "TargetPath": "Views\\Shared\\Components\\CartSummary\\Default.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Shopping Cart\\ShoppingCart\\Views\\Shared\\Components\\Category\\Default.cshtml",
+      "TargetPath": "Views\\Shared\\Components\\Category\\Default.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Shopping Cart\\ShoppingCart\\Pages\\Admin\\IdentityUsers.cshtml",
+      "TargetPath": "Pages\\Admin\\IdentityUsers.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Shopping Cart\\ShoppingCart\\Views\\Order\\Checkout.cshtml",
+      "TargetPath": "Views\\Order\\Checkout.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -14510,6 +15006,11 @@
     {
       "FilePath": "d:\\Shopping Cart\\ShoppingCart\\Views\\Shared\\ProductSummary.cshtml",
       "TargetPath": "Views\\Shared\\ProductSummary.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Shopping Cart\\ShoppingCart\\Pages\\Error.cshtml",
+      "TargetPath": "Pages\\Error.cshtml",
       "FileKind": "mvc"
     },
     {

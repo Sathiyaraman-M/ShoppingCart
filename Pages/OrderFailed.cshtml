@@ -1,0 +1,21 @@
+@page 
+@model OrderFailedModel
+<div class="text-center">
+    <h4>Unable to place the order</h4>
+    The Following Products has stock lesser than that you requested
+    <table class="table table-sm table-striped table-bordered">
+        <tbody>
+            @foreach (CartLine item in Model.cart.Lines)
+            {
+                @if(item.Quantity < item.Product.StockQuantity)
+                {
+                    <tr>
+                        <td>You have requested @item.Quantity @item.Product.Name (s)</td>
+                        <td class="text-warning">But only @item.Product.StockQuantity left in stock</td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+    <a class="btn btn-light btn-round btn-small" asp-action="RedirectToCart">Change Product(s) Quantities</a>
+</div>

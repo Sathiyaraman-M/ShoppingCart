@@ -11,6 +11,7 @@ namespace ShoppingCart.Controllers
         public HomeController(IProductRepository _repository)
         {
             repository = _repository;
+            ProductListViewModel.Categories = repository.Products.Select(p => p.Category).Distinct().OrderBy(p => p);
         }
         public ViewResult Index(string category)
         {
@@ -24,5 +25,5 @@ namespace ShoppingCart.Controllers
         {
             return RedirectToPage("/Cart");
         }
-}
+    }
 }

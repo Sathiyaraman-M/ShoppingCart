@@ -1,0 +1,127 @@
+@model Order
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <link rel="shortcut icon" href="/lib/assets/images/favicon.ico">
+        <link rel="stylesheet" href="/lib/assets/styles/vendor/bootstrap.min.css">
+        <link rel="stylesheet" href="/lib/assets/fonts/et-lineicons/css/style.css">
+        <link rel="stylesheet" href="/lib/assets/fonts/linea-font/css/linea-font.css">
+        <link rel="stylesheet" href="/lib/assets/fonts/fontawesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/lib/assets/styles/vendor/slick.css">
+        <link rel="stylesheet" href="/lib/assets/styles/vendor/magnific-popup.css">
+        <link rel="stylesheet" href="/lib/assets/styles/vendor/animate.css">
+        <link rel="stylesheet" href="/lib/assets/styles/main.css">
+        <link rel="stylesheet" href="/lib/assets/styles/responsive.css">
+        <script src="/lib/assets/js/vendor/modernizr-2.8.3.min.js"></script>
+        <title>Place your Order - SportsStore</title>
+    </head>
+    <body id="page-top">
+        <div class="preloader">
+            <img src="/lib/assets/images/loader.svg" alt="Loading..." />
+        </div>
+        <nav class="navbar navbar-default navbar-fixed-top mega navbar-trans navbar-trans-dark trans-helper">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>  
+                    <a class="navbar-brand" asp-action="Index" asp-controller="Home"><img class="navbar-logo-dark" alt="Sports Store" src="/lib/assets/images/logo.png" /></a>                                      
+                </div>
+            </div>
+        </nav>
+        <div class="container body-content">
+            <div class="ws-m"></div>
+            <h2>Checkout Now</h2>
+            <p>Please enter your Details, and we'll ship your goods right away!</p>
+            <div class="ws-s"></div>
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <form asp-action="Checkout" method="POST">
+                <h3>Ship to</h3>
+                <div class="row">
+                    <div class="form-group col-md-8">
+                        <label>Name: </label><input asp-for="Name" class="form-control" />
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label>Phone Number:</label><input asp-for="PhoneNumber" class="form-control" />
+                    </div>
+                </div>
+                <h3>Address</h3>
+                <div class="form-group">
+                    <label>Line 1: </label><input asp-for="Line1" class="form-control" />        
+                </div>
+                <div class="form-group">
+                    <label>Line 2: </label><input asp-for="Line2" class="form-control" />        
+                </div>
+                <div class="form-group">
+                    <label>Line 3: </label><input asp-for="Line3" class="form-control" />        
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-3">
+                        <label>City: </label><input asp-for="City" class="form-control" />        
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label>State: </label><input asp-for="State" class="form-control" />
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label>Zip: </label><input asp-for="Zip" class="form-control" />
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label>Country: </label><input asp-for="Country" class="form-control" />            
+                    </div>
+                </div>
+                <h3>Options</h3>
+                <div class="checkbox">
+                    <label>
+                        <input asp-for="GiftWrap" /> Gift wrap these items
+                    </label>
+                </div>
+                <div class="text-center">
+                    <input class="btn-ghost btn-round" type="submit" value="Complete Order"/>
+                </div>
+            </form>
+            <div class="ws-l"></div>
+        </div>
+        <footer class="footer-widgets">  
+            <div class="copyright">
+                <div class="container">
+                    <div class="row">                    
+                        <div class="col-md-6">
+                            <small>&copy; 2021 Sports Store. Made by Suhail Sherief and Sathiyaraman.</small>
+                        </div>
+                        <div class="col-md-6">
+                            <small><a href="#page-top" class="pull-right to-the-top">To the top<i class="fa fa-angle-up"></i></a></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="/lib/assets/js/vendor/jquery-2.1.4.min.js"></script>
+        <script src="/lib/assets/js/vendor/google-fonts.js"></script>
+        <script src="/lib/assets/js/vendor/jquery.easing.js"></script>
+        <script src="/lib/assets/js/vendor/jquery.waypoints.min.js"></script>
+        <script src="/lib/assets/js/vendor/bootstrap.min.js"></script>
+        <script src="/lib/assets/js/vendor/bootstrap-hover-dropdown.min.js"></script>
+        <script src="/lib/assets/js/vendor/smoothscroll.js"></script>
+        <script src="/lib/assets/js/vendor/jquery.localScroll.min.js"></script>
+        <script src="/lib/assets/js/vendor/jquery.scrollTo.min.js"></script>
+        <script src="/lib/assets/js/vendor/jquery.stellar.min.js"></script>
+        <script src="/lib/assets/js/vendor/jquery.parallax.js"></script>
+        <script src="/lib/assets/js/vendor/slick.min.js"></script>
+        <script src="/lib/assets/js/vendor/jquery.easypiechart.min.js"></script>
+        <script src="/lib/assets/js/vendor/countup.min.js"></script>
+        <script src="/lib/assets/js/vendor/isotope.min.js"></script>
+        <script src="/lib/assets/js/vendor/jquery.magnific-popup.min.js"></script>
+        <script src="/lib/assets/js/vendor/wow.min.js"></script>
+        <script src="/lib/assets/js/vendor/jquery.mb.YTPlayer.min.js"></script>
+        <script src="/lib/assets/js/vendor/jquery.ajaxchimp.js"></script>
+        <!-- Definity JS -->
+        <script src="/lib/assets/js/main.js"></script>
+    </body>
+</html>

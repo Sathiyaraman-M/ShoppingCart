@@ -36,11 +36,11 @@
                                 <td>@line.Quantity</td>
                                 <td>@line.Product.Price.ToString("c")</td>
                                 <td>@((line.Quantity * line.Product.Price).ToString("c"))</td>
-                                <td>
+                                <td class="text-center">
                                     <form asp-page-handler="Remove" method="POST">
                                         <input type="hidden" name="ProductId" value="@line.Product.ProductId" />
                                         <input type="hidden" name="returnUrl" value="@Model.ReturnUrl" />
-                                        <button type="submit"><span class="linea-arrows-square-remove"></span></button>
+                                        <button class="btn-text btn-small" style="color: rgba(185, 0, 0, 100);" type="submit"><i class="fa fa-times-circle fa-2x"></i></button>
                                     </form>
                                 </td>
                             </tr>
@@ -49,7 +49,7 @@
                 </table>
             </div> 
             <div class="checkout-coupon-form ws-m">
-                <a class="btn btn-ghost pull-right" href="@Model.ReturnUrl">Continue Shopping</a>
+                <a class="btn btn-ghost btn-round pull-right" href="@Model.ReturnUrl">Continue Shopping</a>
             </div> 
         </div>
         <div class="col-lg-3 totals-group">
@@ -62,7 +62,7 @@
                     <p>@Model.Cart.ComputeTotalValues().ToString("c")</p>
                 </div>
                 <div class="checkout-btn-wrapper">
-                    <a class="btn checkout-btn" asp-action="Checkout" asp-controller="Order">Go to Checkout</a>x
+                    <a class="btn checkout-btn btn-round" asp-action="Checkout" asp-controller="Order">Go to Checkout</a>x
                 </div>
             </div>
         </div>  

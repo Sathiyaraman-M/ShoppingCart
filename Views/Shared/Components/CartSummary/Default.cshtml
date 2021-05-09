@@ -1,9 +1,10 @@
 @model Cart
 @if (Model.Lines.Count > 0)
 {
-    <span class="sr-only">
+    <small>
         Your Cart:
         @Model.Lines.Sum(p => p.Quantity) item(s)
         @Model.ComputeTotalValues().ToString("c")
-    </span>
+        <span class="sr-only"></span>
+    </small>
 }

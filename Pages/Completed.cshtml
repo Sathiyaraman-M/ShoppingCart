@@ -1,0 +1,20 @@
+@page
+<header class="page-title pt-large pt-light pt-plax-lg-light" data-stellar-background-ratio="0.4">
+    <div class="container">
+        <div>
+            <div class="col-md-6">
+                <h1 style="color: black;">Thanks!</h1>
+                <h3 class="sub-heading">THANKS FOR PLACING ORDER #@OrderId</h3>                
+            </div>
+        </div>
+    </div>
+</header>  
+<div class="container section">
+    <h5>We'll ship your goods as soon as possible.</h5>
+    <a class="btn btn-round btn-ghost" asp-controller="Home">Return to Store</a>
+</div>
+
+@functions{
+    [BindProperty(SupportsGet = true)]
+    public string OrderId { get; set; }
+}
